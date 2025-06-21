@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHub - Modern Tech Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">Tech<span class="highlight">Hub</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Parallax -->
+    <section class="hero parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Discover the Latest Tech</h1>
+            <p>Explore our collection of premium gadgets and accessories</p>
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button">Shop Now</a>
+                <a href="about.html" class="secondary-button">Learn More</a>
+            </div>
+        </div>
+        <div class="floating-tech">
+            <img src="https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Floating Tech 1" class="float-item" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Floating Tech 2" class="float-item" data-aos="fade-up">
+            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=60" alt="Floating Tech 3" class="float-item" data-aos="fade-left">
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories" data-aos="fade-up">
+        <h2>Featured Categories</h2>
+        <div class="category-grid">
+            <div class="category-card" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smartphones">
+                <h3>Smartphones</h3>
+            </div>
+            <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1544866092-1677b00f868f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Laptops">
+                <h3>Laptops</h3>
+            </div>
+            <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 data-aos="fade-up">Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product cards will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Upload Product Modal -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Add New Product</h2>
+            <form id="productForm">
+                <input type="file" id="productImage" accept="image/*" required>
+                <input type="text" id="productTitle" placeholder="Product Title" required>
+                <input type="number" id="productPrice" placeholder="Price" required>
+                <textarea id="productDescription" placeholder="Product Description" required></textarea>
+                <button type="submit" class="submit-btn">Add Product</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Controls -->
+    <div class="admin-controls">
+        <button id="addProductBtn" class="add-product-btn">
+            <i class="fas fa-plus"></i> Add Product
+        </button>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" data-aos="fade-up">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest tech updates and exclusive offers!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 TechHub. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
